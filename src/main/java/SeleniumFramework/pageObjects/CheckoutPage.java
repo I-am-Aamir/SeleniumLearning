@@ -35,4 +35,6 @@ public class CheckoutPage extends AbstractComponents {
 		ThankYouPage thankYouPage = new ThankYouPage(checkoutPageDriver);
 		return thankYouPage;
 	}
+	
+	//adding this here to learn on GIT
 }
