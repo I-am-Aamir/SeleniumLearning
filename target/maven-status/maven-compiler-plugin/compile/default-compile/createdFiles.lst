@@ -1,0 +1,8 @@
+SeleniumFramework\pageObjects\ProductCalatague.class
+SeleniumFramework\Reusable\OrdersPage.class
+SeleniumFramework\pageObjects\LoginPage.class
+SeleniumFramework\pageObjects\MyCart.class
+SeleniumFramework\Resources\ExtentReporterNG.class
+SeleniumFramework\pageObjects\ThankYouPage.class
+SeleniumFramework\Reusable\AbstractComponents.class
+SeleniumFramework\pageObjects\CheckoutPage.class

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="SeleniumFramework.TestComponent.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="ErrorValidation(failed)">
+    <groups>
+      <run>
+        <include name="ErrorHandeling"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SeleniumFramework.Tests.ErrorValidation">
+        <methods>
+          <include name="LoginErrorValidation"/>
+          <include name="LandingPage"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- SeleniumFramework.Tests.ErrorValidation -->
+    </classes>
+  </test> <!-- ErrorValidation(failed) -->
+  <test thread-count="5" parallel="tests" name="FrameworkBuilding(failed)">
+    <groups>
+      <run>
+        <include name="ErrorHandeling"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SeleniumFramework.Tests.FrameworkBuilding">
+        <methods>
+          <include name="orderSubmit" invocation-numbers="0"/>
+          <include name="LandingPage"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- SeleniumFramework.Tests.FrameworkBuilding -->
+    </classes>
+  </test> <!-- FrameworkBuilding(failed) -->
+</suite> <!-- Failed suite [Suite] -->

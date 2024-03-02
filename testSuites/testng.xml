@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<!-- TestNg doesn't have idea above where listerners are so we have to specifically provide that value-->
+	<listeners>
+		<listener class-name="SeleniumFramework.TestComponent.Listeners"></listener>
+	</listeners>
+	<test thread-count="5" name="FrameworkBuilding">
+		<classes>
+			<class name="SeleniumFramework.Tests.FrameworkBuilding" />
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="5" name="ErrorValidation">
+		<classes>
+			<class name="SeleniumFramework.Tests.ErrorValidation" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
