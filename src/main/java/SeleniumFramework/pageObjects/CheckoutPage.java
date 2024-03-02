@@ -36,5 +36,4 @@ public class CheckoutPage extends AbstractComponents {
 		return thankYouPage;
 	}
 	
-	//adding this here to learn on GIT
 }
